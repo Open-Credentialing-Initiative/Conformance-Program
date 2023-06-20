@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
+
+  <title>Conformance Program</title>
+  <h2 id="subtitle">v1.0.2</h2>
+  
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script type="text/javascript" class="remove">
+    var respecConfig = {
+      specStatus: 'base',
+      latestVersion: "https://open-credentialing-initiative.github.io/Conformance-Program/",
+      shortName: 'Conformance-Program',
+      publishDate: "24 Jan 2023",
+      license: 'w3c-software-doc',
+      logos: [],
+      lint: {
+        "check-punctuation": true,
+        "no-http-props": true
+      },
+      editors: [
+        {
+          name: 'Dr Christiane Wirrig',
+          url: 'https://www.linkedin.com/in/chriswirrig/',
+          company: 'Spherity',
+          companyURL: 'https://spherity.com/',
+        },
+        {
+          name: 'Dr Carsten Stöcker',
+          url: 'https://www.linkedin.com/in/dr-carsten-st%C3%B6cker-1145871/',
+          company: 'Spherity',
+          companyURL: 'https://spherity.com/',
+        },
+        {
+          name: 'Alex Colgan',
+          url: 'https://www.linkedin.com/in/alexcolgan/',
+          company: 'LedgerDomain',
+          companyURL: 'https://ledgerdomain.com/',
+        },
+        {
+          name: 'Penny Hendrix',
+          url: 'https://legisym.com/',
+          company: 'Legisym',
+          companyURL: 'https://legisym.com/',
+        },
+        {
+          name: 'David Kessler',
+          url: 'https://www.linkedin.com/in/dwkessler/',
+          company: 'Legisym',
+          companyURL: 'https://legisym.com/',
+        },
+        {
+          name: 'Brittany Payson',
+          url: 'https://www.linkedin.com/in/brittanygracedesigner/',
+          company: 'Legisym',
+          companyURL: 'https://legisym.com/',
+        },
+        {
+          name: 'Elizabeth Waldorf',
+          url: 'https://www.linkedin.com/in/elizabethwaldorf/',
+          company: 'TraceLink',
+          companyURL: 'https://www.tracelink.com/',
+        },
+      ],
+      github: "https://github.com/Open-Credentialing-Initiative/Conformance-Program",
+      logos: [
+        {
+          src: "https://avatars.githubusercontent.com/u/79323216?s=200&v=4",
+          url: "https://github.com/Open-Credentialing-Initiative/Conformance-Program",
+          alt: "OCI Logo",
+          width: 100,
+          height: 100,
+          id: "oci-logo",
+        },
+      ],
+      otherLinks: [
+        {
+          key: "Document Status",
+          data: [
+            {
+              value: "Approved",
+            },
+          ],
+        },
+      ],
+      maxTocLevel: 2
+    };
+  </script>
+  <style>
+    body {
+      background: white !important;
+    }
+
+    table {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="copyright">Copyright © 2023 Named editors. Contributors to the Open Credentialing Initiative.</p>
+  <section>
+    <h2>Status of this Document</h2>
+      <p>
+        This section describes the status of this document at the
+        time of its publication. Other documents may supersede this
+        document.
+      </p>
+      <p>This is a living OCI Document developed by OCI Members with input
+        from relevant interested parties. It is anticipated that the contents of this document will be reviewed and
+        updated to address any applicable feedback. A list of current public OCI Documents, including Conformance Criteria, can
+        be found in <a href="https://github.com/Open-Credentialing-Initiative">OCI's GitHub repositories</a>.
+      </p>
+  </section>
+  <!-- Abstract -->
+  <section id="abstract">
+    <p>
+      This document lays out OCI’s expectations of ecosystem participants and conformance auditors with respect to OCI Conformance Criteria.
+    </p>
+  </section>
+  <!-- Purpose -->  
+  <section>
+    <h2>Purpose</h2>
+      <p>OCI sets Conformance Criteria for participant groups within the OCI ecosystem. This Conformance Program lays out the framework for OCI’s monitoring of participants’ adherence to these criteria. <br><br>
+        This Program sets OCI’s expectations of ecosystem participants and conformance auditors, the scope of OCI’s involvement in the conformance audit process as well as expectations about audit outcome and processes in reaction to possible audit results. <br><br>
+        Operationally, OCI’s goal is to achieve service reliability and true interoperability among service providers. Overall, this Conformance Program is to provide assurance to industry users within the wider OCI ecosystem that they will be in compliance with the letter and intent of FDA and DSCSA if they participate in this ecosystem.
+      </p>
+  </section>
+  <!-- Conformance -->
+  <section id="conformance">    
+    <h2>General Terms and Abbreviations</h2>
+      <p><dfn>Good standing</dfn>: An organization in good standing is regarded as having complied with all their explicit legal obligations, be financially sound, while not being subject to any form of sanction, suspension or disciplinary censure. A business entity that is in good standing has unabated powers to conduct its activities, which can include business endeavors.</p>
+  </section>
+  <!-- Content -->
+  <section>
+    <h2>Compliance monitoring</h2>
+      <b>OCI Participants</b>
+      <p>The following OCI Participants SHALL provide self-attestation using the latest applicable version of the OCI-provided template that they are in compliance with the respective published Conformance Criteria:</p>
+        <ul>
+          <li>VRS Providers</li>
+        </ul>
+      <b>OCI Service Providers</b>
+      <p>The following OCI Service Providers SHALL undergo a formal third-party audit to assert their compliance with the respective published Conformance Criteria:</p>
+        <ul>
+          <li>Credential Issuers</li>
+          <li>Digital Wallet Providers</li>
+        </ul>
+      <p>Further, where self-attestation is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
+      </p>
+      <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <b>valid</b> OCI Service Provider until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
+        <ul>
+          <li>OCI Service Provider has changed their auditable or attestation-relevant processes and/or code associated to the prior audit or self-attestation if the OCI Steering Committee and Service Provider deem such change sufficiently significant; </li>
+          <li>OCI has changed the respective Conformance Criteria that affect the auditable or attestation-relevant processes;</li>
+          <li>Service Provider has acquired a solution from another company (audit and/or self-attestation is only applicable to the company to which it was originally awarded).</li>
+        </ul>
+      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance. This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a new audit or self-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as valid OCI Service Providers for that period.
+      </p>
+      <h3>Scope of formal audit</h3>
+        <b>Credential Issuers</b>
+        <p>The formal audit SHALL address <b>all</b> compliance criteria in the OCI Credential Issuer Conformance Criteria as it relates to the specific Credential Type(s) the Credential Issuer offers. 
+          The OCI Credential Issuer Conformance Criteria document can be found at the following public location: <a href="https://open-credentialing-initiative.github.io/Credential-Issuer-Conformance-Criteria/">OCI GitHub - Credential Issuer Conformance Criteria</a>. 
+        </p>  
+        <b>Digital Wallet Providers</b>
+        <p>The formal audit of a Digital Wallet provider SHALL address <b>all</b> compliance criteria as set out in the published OCI Digital Wallet Conformance Criteria document found at the following public location: <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/index.html">OCI GitHub - Digital Wallet Conformance Criteria</a>.<br><br>
+          Since the nature of the various conformance criteria differs, auditors SHOULD distinguish between Test of Details and Test of Controls as applicable to individual criteria or groups of criteria.<br><br>
+          To the extent that OCI conformance criteria are covered by another audit, auditors MAY rely on audit work performed by other trustworthy entities to avoid duplication of work, for example in the context of a SOC2 or ISO audit.
+        </p>
+      <h3>Test of Details</h3>
+        <p>OCI defines Test of Details as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
+          This is a direct testing approach and may involve methods such as sampling, reperformance, or analytical review.
+          </p>
+      <h3>Test of Controls</h3>
+        <p>OCI defines <dfn>Test of Controls</dfn> as any audit method that assesses whether operational controls and practices put in place by the auditee are sufficiently documented, functional and adhered to as intended by systems and staff of the auditee. <br><br>
+          This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where Test of Details is deemed neither feasible nor informative.<br><br>
+          Where the auditor applies a Test of Controls approach, Service Providers are required to produce audit-independent self-attestation reports or statements publicly available to the OCI ecosystem demonstrating their performance. OCI SHALL maintain a public repository for such documentation. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
+          The auditor SHALL apply the Test of Controls approach to the following specific conformance criteria.<br>
+          Digital Wallet Conformance Criteria:
+          <ul>
+            <li>NFR006 High Availability</li>
+            <li>NFR007 Maximum system response time</li>
+          </ul></p>
+      <h3>Data handling by auditor</h3>
+        <p>Auditors SHALL inspect and the auditee SHALL make available as much sensitive or confidential data as needed for the auditor to come to a reliable conclusion. Such data or information about the data SHALL be shared securely only between auditor and auditee. Auditors SHALL store only as much sensitive or confidential data as needed for audit completion and potential re-use or reference in future audits.
+        </p>
+  </section>
+  <section>
+    <h2>Audit outcome</h2>
+      <h3>Auditor conclusion</h3>
+        <p>The auditor SHALL express the overall audit conclusion in the form of a written and signed audit opinion or certificate issued to the auditee stating the auditee’s compliance or failure to comply with the applicable published OCI Conformance Criteria. <br><br>
+            The auditor SHOULD highlight to the auditee any suggestions for improvement and other professional feedback in separate communication.
+        </p>
+      <h3>Process after successful audit result</h3>
+        <h4>Publication of audit outcome</h4>
+          <p>As soon as the auditee has successfully passed the audit, they SHALL inform the OCI Steering Committee and make a copy of the auditor’s conclusion document publicly available either on their own website or other online repository or by submitting it to the OCI Steering Committee. Regardless of the means by which the auditee submits the information, OCI will publish all auditor’s conclusions in a single OCI-managed repository. Where a link to an external location is provided, the auditee agrees to allow OCI hyperlinks to that online location from the OCI repository. The auditee SHALL alert the OCI Steering Committee in a timely manner if the link needs to be changed. <br><br>
+            The auditor SHOULD also publish limited audit results, such as the signed audit opinion or certificate, on their public website. It is assumed that the auditor agrees to allow OCI hyperlinks to their online location from the applicable OCI registry or repository.<br><br>            
+            OCI SHALL update the applicable public registry of trusted service providers to add or update the successful auditee’s details.
+          </p>
+        <h4>Validity period</h4>
+          <p>The auditor’s conclusion SHALL be valid starting on the signing date of the conclusion until one of the triggering events stated earlier or the end of an agreed grace period following the triggering event (refer to <em>Compliance Monitoring</em>). 
+          </p>
+      <h3>Process after audit failure following a re-audit</h3>
+        <h4>Notification of OCI</h4>
+          <p>In the case of a re-audit, the auditee SHALL submit a copy of the auditor’s conclusion of failure to the OCI Steering Committee on the day of receiving the final audit report or the day after if the report is received outside the auditee’s business hours.<br>
+            The OCI Steering Committee SHALL inform all other valid OCI Service Providers of the auditee’s negative audit conclusion. <br><br>          
+            OCI SHALL update the applicable public registry of trusted valid Service Providers to remove the auditee’s details at the appropriate date if listed.
+          </p>
+        <h4>Notification of service users</h4>
+          <p>The auditee SHOULD inform their customers of the negative re-audit outcome in a timely manner.
+          </p>
+      <h3>Trusted service provider registries</h3>
+      <p>OCI SHALL maintain up-to-date registries listing valid Service Providers that have passed the compliance audit, referred to as <b>Trusted</b> Service Providers.
+        <br><br>
+        Any listed valid OCI Service Provider who does not make a copy of the latest positive auditor’s conclusion available to OCI, will be removed from the registry. They will be added back to the registry upon submission of the positive audit conclusion.
+        <br><br>
+        Service Providers that have failed in the audit to prove their compliance with OCI Conformance Criteria will not be added or, if already listed, will be removed from the applicable registry.
+        <br><br>
+        OCI MAY take up to five (5) business days to add a new Trusted Service Provider to the respective registry and to update the status of an already listed Service Provider in the respective registry if required.
+        <br><br>
+        The registries can be found at the following public locations:</p>
+          <table class="simple">
+            <tr>
+              <td>Trusted Digital Wallet Provider registry</td>
+              <td>Coming soon</td>
+            </tr>
+            <tr>
+              <td>Trusted Credential Issuer registry</td>
+              <td>Coming soon</td>
+            </tr>
+          </table>
+  </section>
+  <section>
+    <h2>Auditor assessment</h2>
+      <p>Service Providers, who require a third-party audit to assert OCI conformance, MAY choose an audit firm themselves as long as the firm meets the set of minimum acceptance criteria detailed below.
+        <br><br>
+        The Service Provider SHALL prove to OCI that they have performed the required due diligence for auditor selection by submitting evidence to the OCI Steering Committee using the respective signed form provided by OCI.
+      </p>
+      <h3>Auditor acceptance criteria</h3>
+        <p>
+          OCI defines the minimum acceptance criteria for audit firms as follows.<br>
+          The audit firm SHALL: 
+            <ul>
+              <li>be in <a>good standing</a>;</li>
+              <li>demonstrate a track record of industry-relevant audit work (e.g. EPCIS; CSOS, SOC2);</li>
+              <li>demonstrate their understanding of the relevant OCI conformance criteria through their audit strategy.</li>
+            </ul>
+          The audit firm SHOULD:
+            <ul>
+              <li>not be involved in any lawsuits with clients or regulators.</li>
+            </ul>
+          The audit firm MAY:
+            <ul>
+              <li>have performed prior OCI-related audits. </li>
+            </ul>
+        </p>
+      <h3>Auditor inspection</h3> 
+        <p>The OCI Steering Committee MAY inspect the auditor at any time, for example, by assessing audit practices or reputational standing. Since the Service Provider is the audit firm’s customer, the auditee SHALL make the auditor aware of OCI’s desire for an inspection, where direct contact with the auditor is required, and facilitate the contact.
+        </p>
+  </section>
+  <section>
+    <h2>Self-Attestation</h2>
+      <p>Self-attestation refers to representations made by the Service Provider in reference to the relevant OCI Conformance Criteria as a whole or selected requirements therein. Such representations SHALL be signed by the Service Provider’s senior management and provided to the OCI Steering Committee for publication, either as a stand-alone document or as a statement of permission for OCI to hyperlink to the service provider’s own public storage location. Where OCI prescribes a template for such representations, the latest published version at the time of signing SHALL be used by the Service Provider.
+        <br><br>
+        At any time the OCI Steering Committee MAY challenge any Service Provider on the claims made. The Service Provider SHALL then address the points of concern raised by the OCI Steering Committee in a form and timeframe appropriate to the situation and as agreed with the OCI Steering Committee.
+      </p>
+      <h3>Audited service providers</h3>
+        <p>Where self-attestation is permissible or required as additional evidence on top of a third-party audit (refer to <a>Test of Controls</a>), the Service Provider SHALL make the necessary documentation available to OCI.
+        </p>
+      <h3>VRS providers</h3>
+        <p>VRS providers SHALL self-attest that they are in compliance with <b>all</b> requirements within the OCI VRS Providers Conformance Criteria.
+        </p>
+  </section>
+</body>
+
+</html>
