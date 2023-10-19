@@ -145,7 +145,7 @@
   <section>
     <h2>Compliance monitoring</h2>
       <b>OCI Participants</b>
-      <p>The following OCI Participants SHALL provide self-attestation using the latest applicable version of the OCI-provided template that they are in compliance with the respective published Conformance Criteria:</p>
+      <p>The following OCI Participants SHALL provide <a>Attestation of Conformance</a> using the latest applicable version of the OCI-provided template that they are in compliance with the respective published Conformance Criteria:</p>
         <ul>
           <li>VRS Providers</li>
         </ul>
@@ -155,19 +155,19 @@
           <li>Credential Issuers</li>
           <li>Digital Wallet Providers</li>
         </ul>
-      <p>Further, where self-attestation is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
+      <p>Further, where <a>Operational Attestation</a> is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
       </p>
-      <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <b>valid</b> OCI Service Provider until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
+      <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <dfn>valid OCI Service Provider</dfn> until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
         <ul>
           <li>OCI Service Provider has changed their auditable or attestation-relevant processes and/or code associated to the prior audit or self-attestation if the OCI Steering Committee and Service Provider deem such change sufficiently significant; </li>
           <li>OCI has changed the respective Conformance Criteria that affect the auditable or attestation-relevant processes;</li>
           <li>OCI Service Provider has acquired a solution from another company (audit and/or self-attestation is only applicable to the company to which it was originally awarded).</li>
         </ul>
-      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance. This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a new audit or self-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as valid OCI Service Providers for that period.
+      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance (Figure 1). This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a re-audit or re-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as <a>valid OCI Service Providers</a> for that period. Where <a>Operational Attestation</a> requires recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirements.
       </p>
       <figure id="figure">
           <img src="assets/oci-self-attestation-process.svg" alt="High-level OCI Roadmap Process.svg" style="width: 50%; height: 50%;" />
-          <figcaption>High-level OCI Roadmap Process</figcaption>
+          <figcaption>Fig. 1: Key steps in OCI compliance monitoring</figcaption>
       </figure>
       <h3>Scope of formal audit</h3>
         <b>Credential Issuers</b>
@@ -219,16 +219,16 @@
       <h3>Process after audit failure following a re-audit</h3>
         <h4>Notification of OCI</h4>
           <p>In the case of a re-audit, the auditee SHALL submit a copy of the auditor’s conclusion of failure to the OCI Steering Committee on the day of receiving the final audit report or the day after if the report is received outside the auditee’s business hours.<br>
-            The OCI Steering Committee SHALL inform all other valid OCI Service Providers of the auditee’s negative audit conclusion. <br><br>          
-            OCI SHALL update the applicable public registry of trusted valid Service Providers to remove the auditee’s details at the appropriate date if listed.
+            The OCI Steering Committee SHALL inform all other <a>valid OCI Service Providers</a> of the auditee’s negative audit conclusion. <br><br>          
+            OCI SHALL update the applicable public registry of trusted <a>valid OCI Service Providers</a> to remove the auditee’s details at the appropriate date if listed.
           </p>
         <h4>Notification of service users</h4>
           <p>The auditee SHOULD inform their customers of the negative re-audit outcome in a timely manner.
           </p>
       <h3>Trusted service provider registries</h3>
-      <p>OCI SHALL maintain up-to-date registries listing valid Service Providers that have passed the compliance audit, referred to as <b>Trusted</b> Service Providers.
+      <p>OCI SHALL maintain up-to-date registries listing <a>valid OCI Service Providers</a> that have passed the compliance audit, referred to as <b>Trusted</b> Service Providers.
         <br><br>
-        Any listed valid OCI Service Provider who does not make a copy of the latest positive auditor’s conclusion available to OCI, will be removed from the registry. They will be added back to the registry upon submission of the positive audit conclusion.
+        Any listed <a>valid OCI Service Provider</a> who does not make a copy of the latest positive auditor’s conclusion available to OCI, will be removed from the registry. They will be added back to the registry upon submission of the positive audit conclusion.
         <br><br>
         Service Providers that have failed in the audit to prove their compliance with OCI Conformance Criteria will not be added or, if already listed, will be removed from the applicable registry.
         <br><br>
