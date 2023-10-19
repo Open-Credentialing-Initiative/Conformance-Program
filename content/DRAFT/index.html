@@ -144,12 +144,10 @@
   <!-- Content -->
   <section>
     <h2>Compliance monitoring</h2>
-      <b>OCI Participants</b>
-      <p>The following OCI Participants SHALL provide <a>Attestation of Conformance</a> using the latest applicable version of the OCI-provided template that they are in compliance with the respective published Conformance Criteria:</p>
+      <p>The following OCI Service Providers SHALL provide <a>Attestation of Conformance</a> using the <a href="https://www.oc-i.org/forms">latest applicable version of the OCI-provided template</a> that they are in compliance with the respective published Conformance Criteria:</p>
         <ul>
           <li>VRS Providers</li>
         </ul>
-      <b>OCI Service Providers</b>
       <p>The following OCI Service Providers SHALL undergo a formal third-party audit to assert their compliance with the respective published Conformance Criteria:</p>
         <ul>
           <li>Credential Issuers</li>
@@ -163,11 +161,13 @@
           <li>OCI has changed the respective Conformance Criteria that affect the auditable or attestation-relevant processes;</li>
           <li>OCI Service Provider has acquired a solution from another company (audit and/or self-attestation is only applicable to the company to which it was originally awarded).</li>
         </ul>
-      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance (Figure 1). This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a re-audit or re-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as <a>valid OCI Service Providers</a> for that period. Where <a>Operational Attestation</a> requires recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirements.
+    <b>Scheduling</b>
+      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance (Figure 1). This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a re-audit or re-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as <a>valid OCI Service Providers</a> for that period.<br><br>
+      Where <a>Operational Attestation</a> requires recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirement. At a minimum, reports SHALL show monthly averages of the relevant operational data and cover no more than six (6) months in total. The first report begins in the month of successful (re-)audit completion. Subsequent reports SHALL cover the reporting period directly following the prior reported period. Reports MAY show more granular data than monthly averages and cover more frequent time periods. Reports MAY constitute manual submissions to OCI or automated publicly accessible displays. Each report SHALL be submitted no later than five (5) business days following the end of each reporting period. 
       </p>
       <figure id="figure">
           <img src="assets/oci-self-attestation-process.svg" alt="High-level OCI Roadmap Process.svg" style="width: 50%; height: 50%;" />
-          <figcaption>Fig. 1: Key steps in OCI compliance monitoring</figcaption>
+          <figcaption>Figure 1. Key steps in OCI compliance monitoring</figcaption>
       </figure>
       <h3>Scope of formal audit</h3>
         <b>Credential Issuers</b>
@@ -176,7 +176,7 @@
         </p>  
         <b>Digital Wallet Providers</b>
         <p>The formal audit of a Digital Wallet provider SHALL address <b>all</b> compliance criteria as set out in the published OCI Digital Wallet Conformance Criteria document found at the following public location: <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/index.html">OCI GitHub - Digital Wallet Conformance Criteria</a>.<br><br>
-          Since the nature of the various conformance criteria differs, auditors SHOULD distinguish between Test of Details and Test of Controls as applicable to individual criteria or groups of criteria.<br><br>
+          Since the nature of the various conformance criteria differs, auditors SHOULD distinguish between <a>Test of Details</a> and <a>Test of Controls</a> as applicable to individual criteria or groups of criteria.<br><br>
           To the extent that OCI conformance criteria are covered by another audit, auditors MAY rely on audit work performed by other trustworthy entities to avoid duplication of work, for example in the context of a SOC 2 or ISO audit.
         </p>
         <b>Temporary limitation of audit scope</b>
@@ -184,13 +184,13 @@
           OCI does not require conformance with any DIDcomm-specific elements of the Digital Wallet Conformance Criteria until the respective specifications have been updated. In this transition period, OCI permits other technological means for the issuance and exchange of verifiable credentials, such as API-based approaches.
         </p>
       <h3>Test of Details</h3>
-        <p>OCI defines Test of Details as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
+        <p>OCI defines <dfn>Test of Details</dfn> as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
           This is a direct testing approach and may involve methods such as sampling, reperformance, or analytical review.
           </p>
       <h3>Test of Controls</h3>
         <p>OCI defines <dfn>Test of Controls</dfn> as any audit method that assesses whether operational controls and practices put in place by the auditee are sufficiently documented, functional and adhered to as intended by systems and staff of the auditee. <br><br>
-          This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where Test of Details is deemed neither feasible nor informative.<br><br>
-          Where the auditor applies a Test of Controls approach, Service Providers are required to produce audit-independent self-attestation reports or statements publicly available to the OCI ecosystem demonstrating their performance. OCI SHALL maintain a public repository for such documentation. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
+          This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where <a>Test of Details</a> is deemed neither feasible nor informative.<br><br>
+          Where the auditor applies solely a Test of Controls approach, Service Providers SHALL produce audit-independent <a>Operational Attestation</a> that is available via OCI's <a href="https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof">public repository</a>. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
           The auditor SHALL apply the Test of Controls approach to the following specific conformance criteria.<br>
           Digital Wallet Conformance Criteria:
           <ul>
