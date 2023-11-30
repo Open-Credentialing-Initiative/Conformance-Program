@@ -144,27 +144,31 @@
   <!-- Content -->
   <section>
     <h2>Compliance monitoring</h2>
-      <b>OCI Participants</b>
-      <p>The following OCI Participants SHALL provide self-attestation using the latest applicable version of the OCI-provided template that they are in compliance with the respective published Conformance Criteria:</p>
+      <p>The following OCI Service Providers SHALL provide <a>Attestation of Conformance</a> using the <a href="https://www.oc-i.org/forms">latest applicable version of the OCI-provided template</a> that they are in compliance with the respective published Conformance Criteria:</p>
         <ul>
           <li>VRS Providers</li>
         </ul>
-      <b>OCI Service Providers</b>
       <p>The following OCI Service Providers SHALL undergo a formal third-party audit to assert their compliance with the respective published Conformance Criteria:</p>
         <ul>
           <li>Credential Issuers</li>
           <li>Digital Wallet Providers</li>
         </ul>
-      <p>Further, where self-attestation is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
+      <p>Further, where <a>Operational Attestation</a> is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
       </p>
-      <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <b>valid</b> OCI Service Provider until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
+      <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <dfn>valid OCI Service Provider</dfn> until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
         <ul>
           <li>OCI Service Provider has changed their auditable or attestation-relevant processes and/or code associated to the prior audit or self-attestation if the OCI Steering Committee and Service Provider deem such change sufficiently significant; </li>
           <li>OCI has changed the respective Conformance Criteria that affect the auditable or attestation-relevant processes;</li>
-          <li>Service Provider has acquired a solution from another company (audit and/or self-attestation is only applicable to the company to which it was originally awarded).</li>
+          <li>OCI Service Provider has acquired a solution from another company (audit and/or self-attestation is only applicable to the company to which it was originally awarded).</li>
         </ul>
-      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance. This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a new audit or self-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as valid OCI Service Providers for that period.
+    <b>Scheduling</b>
+      <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance (Figure 1). This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a re-audit or re-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as <a>valid OCI Service Providers</a> for that period.<br><br>
+      Where <a>Operational Attestation</a> requires recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirement. At a minimum, reports SHALL show monthly averages of the relevant operational data and cover no more than six (6) months in total. The first report begins in the month of successful (re-)audit completion. Subsequent reports SHALL cover the reporting period directly following the prior reported period. Reports MAY show more granular data than monthly averages and cover more frequent time periods. Reports MAY constitute manual submissions to OCI or automated publicly accessible displays. Each report SHALL be submitted no later than five (5) business days following the end of each reporting period. 
       </p>
+      <figure id="figure">
+          <img src="assets/oci-self-attestation-process.svg" alt="High-level OCI Roadmap Process.svg" style="width: 50%; height: 50%;" />
+          <figcaption>Figure 1. Key steps in OCI compliance monitoring</figcaption>
+      </figure>
       <h3>Scope of formal audit</h3>
         <b>Credential Issuers</b>
         <p>The formal audit SHALL address <b>all</b> compliance criteria in the OCI Credential Issuer Conformance Criteria as it relates to the specific Credential Type(s) the Credential Issuer offers. 
@@ -172,21 +176,21 @@
         </p>  
         <b>Digital Wallet Providers</b>
         <p>The formal audit of a Digital Wallet provider SHALL address <b>all</b> compliance criteria as set out in the published OCI Digital Wallet Conformance Criteria document found at the following public location: <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/index.html">OCI GitHub - Digital Wallet Conformance Criteria</a>.<br><br>
-          Since the nature of the various conformance criteria differs, auditors SHOULD distinguish between Test of Details and Test of Controls as applicable to individual criteria or groups of criteria.<br><br>
-          To the extent that OCI conformance criteria are covered by another audit, auditors MAY rely on audit work performed by other trustworthy entities to avoid duplication of work, for example in the context of a SOC2 or ISO audit.
+          Since the nature of the various conformance criteria differs, auditors SHOULD distinguish between <a>Test of Details</a> and <a>Test of Controls</a> as applicable to individual criteria or groups of criteria.<br><br>
+          To the extent that OCI conformance criteria are covered by another audit, auditors MAY rely on audit work performed by other trustworthy entities to avoid duplication of work, for example in the context of a SOC 2 or ISO audit.
         </p>
         <b>Temporary limitation of audit scope</b>
         <p> OCI has not yet standardized the DIDComm-based wallet-to-wallet communication that is to be implemented by Digital Wallet Providers. Since the initial overview of technologies proposed in the <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/index.html">Digital Wallet Conformance Criteria</a> only permits the implementation of custom DIDComm flows that might be outside of OCI's future recommendations, 
-          OCI does not require conformance with any DIDcomm-specific elements of the Digital Wallet Conformance Criteria until the respective specifications have been updated. In this transition period, OCI permits other technological means for the issuance and exchange of verifiable credentials, such as API-based approaches.
+          OCI does not require conformance with any DIDComm-specific elements of the Digital Wallet Conformance Criteria until the respective specifications have been updated. In this transition period, OCI permits other technological means for the issuance and exchange of verifiable credentials, such as API-based approaches.
         </p>
       <h3>Test of Details</h3>
-        <p>OCI defines Test of Details as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
+        <p>OCI defines <dfn>Test of Details</dfn> as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
           This is a direct testing approach and may involve methods such as sampling, reperformance, or analytical review.
           </p>
       <h3>Test of Controls</h3>
         <p>OCI defines <dfn>Test of Controls</dfn> as any audit method that assesses whether operational controls and practices put in place by the auditee are sufficiently documented, functional and adhered to as intended by systems and staff of the auditee. <br><br>
-          This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where Test of Details is deemed neither feasible nor informative.<br><br>
-          Where the auditor applies a Test of Controls approach, Service Providers are required to produce audit-independent self-attestation reports or statements publicly available to the OCI ecosystem demonstrating their performance. OCI SHALL maintain a public repository for such documentation. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
+          This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where <a>Test of Details</a> is deemed neither feasible nor informative.<br><br>
+          Where the auditor applies solely a Test of Controls approach, Service Providers SHALL produce audit-independent <a>Operational Attestation</a> that is available via OCI's <a href="https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof">public repository</a>. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
           The auditor SHALL apply the Test of Controls approach to the following specific conformance criteria.<br>
           Digital Wallet Conformance Criteria:
           <ul>
@@ -205,7 +209,7 @@
         </p>
       <h3>Process after successful audit result</h3>
         <h4>Publication of audit outcome</h4>
-          <p>As soon as the auditee has successfully passed the audit, they SHALL inform the OCI Steering Committee and make a copy of the auditor’s conclusion document publicly available either on their own website or other online repository or by submitting it to the OCI Steering Committee. Regardless of the means by which the auditee submits the information, OCI will publish all auditor’s conclusions in a single OCI-managed repository. Where a link to an external location is provided, the auditee agrees to allow OCI hyperlinks to that online location from the OCI repository. The auditee SHALL alert the OCI Steering Committee in a timely manner if the link needs to be changed. <br><br>
+          <p>As soon as the auditee has successfully passed the audit, they SHALL inform the OCI Steering Committee and make a copy of the auditor’s conclusion document publicly available either on their own website or other online repository or by submitting it to the OCI Steering Committee. Regardless of the means by which the auditee submits the information, OCI will publish all auditor’s conclusions in a single OCI-managed repository. Where a link to an external location is provided, the auditee agrees to allow OCI to hyperlink to that online location from the OCI repository. The auditee SHALL alert the OCI Steering Committee in a timely manner if the link needs to be changed. <br><br>
             The auditor SHOULD also publish limited audit results, such as the signed audit opinion or certificate, on their public website. It is assumed that the auditor agrees to allow OCI hyperlinks to their online location from the applicable OCI registry or repository.<br><br>            
             OCI SHALL update the applicable public registry of trusted service providers to add or update the successful auditee’s details.
           </p>
@@ -215,16 +219,16 @@
       <h3>Process after audit failure following a re-audit</h3>
         <h4>Notification of OCI</h4>
           <p>In the case of a re-audit, the auditee SHALL submit a copy of the auditor’s conclusion of failure to the OCI Steering Committee on the day of receiving the final audit report or the day after if the report is received outside the auditee’s business hours.<br>
-            The OCI Steering Committee SHALL inform all other valid OCI Service Providers of the auditee’s negative audit conclusion. <br><br>          
-            OCI SHALL update the applicable public registry of trusted valid Service Providers to remove the auditee’s details at the appropriate date if listed.
+            The OCI Steering Committee SHALL inform all other <a>valid OCI Service Providers</a> of the auditee’s negative audit conclusion. <br><br>          
+            OCI SHALL update the applicable public registry of trusted <a>valid OCI Service Providers</a> to remove the auditee’s details at the appropriate date if listed.
           </p>
         <h4>Notification of service users</h4>
           <p>The auditee SHOULD inform their customers of the negative re-audit outcome in a timely manner.
           </p>
       <h3>Trusted service provider registries</h3>
-      <p>OCI SHALL maintain up-to-date registries listing valid Service Providers that have passed the compliance audit, referred to as <b>Trusted</b> Service Providers.
+      <p>OCI SHALL maintain up-to-date registries listing <a>valid OCI Service Providers</a> that have passed the compliance audit, referred to as <b>Trusted</b> Service Providers.
         <br><br>
-        Any listed valid OCI Service Provider who does not make a copy of the latest positive auditor’s conclusion available to OCI, will be removed from the registry. They will be added back to the registry upon submission of the positive audit conclusion.
+        Any listed <a>valid OCI Service Provider</a> who does not make a copy of the latest positive auditor’s conclusion available to OCI, will be removed from the registry. They will be added back to the registry upon submission of the positive audit conclusion.
         <br><br>
         Service Providers that have failed in the audit to prove their compliance with OCI Conformance Criteria will not be added or, if already listed, will be removed from the applicable registry.
         <br><br>
@@ -234,11 +238,11 @@
           <table class="simple">
             <tr>
               <td>Trusted Digital Wallet Provider registry</td>
-              <td>Coming soon</td>
+              <td>Refer to <a href="https://open-credentialing-initiative.github.io/marketplace/">Proof of OCI conformance</a></td>
             </tr>
             <tr>
               <td>Trusted Credential Issuer registry</td>
-              <td>Coming soon</td>
+              <td>Refer to <a href="https://open-credentialing-initiative.github.io/marketplace/">Proof of OCI conformance</a>. Digital wallets call a technological implementation of the Trusted Issuer registry to enable automated credential checks. Refer to <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/#trusted-credential-issuer-registry">the respective section in the Digital Wallet Conformance Criteria</a>.</td>
             </tr>
           </table>
   </section>
@@ -254,7 +258,7 @@
           The audit firm SHALL: 
             <ul>
               <li>be in <a>good standing</a>;</li>
-              <li>demonstrate a track record of industry-relevant audit work (e.g. EPCIS; CSOS, SOC2);</li>
+              <li>demonstrate a track record of industry-relevant audit work (e.g. EPCIS; CSOS, SOC 2);</li>
               <li>demonstrate their understanding of the relevant OCI conformance criteria through their audit strategy.</li>
             </ul>
           The audit firm SHOULD:
@@ -272,17 +276,21 @@
   </section>
   <section>
     <h2>Self-Attestation</h2>
-      <p>Self-attestation refers to representations made by the Service Provider in reference to the relevant OCI Conformance Criteria as a whole or selected requirements therein. Such representations SHALL be signed by the Service Provider’s senior management and provided to the OCI Steering Committee for publication, either as a stand-alone document or as a statement of permission for OCI to hyperlink to the service provider’s own public storage location. Where OCI prescribes a template for such representations, the latest published version at the time of signing SHALL be used by the Service Provider.
-        <br><br>
-        At any time the OCI Steering Committee MAY challenge any Service Provider on the claims made. The Service Provider SHALL then address the points of concern raised by the OCI Steering Committee in a form and timeframe appropriate to the situation and as agreed with the OCI Steering Committee.
+      <p>Self-attestation, in general, refers to representations made by the Service Provider in reference to the relevant OCI Conformance Criteria as a whole or selected requirements therein. OCI distinguishes between <a>Attestation of Conformance</a> and <a>Operational Attestation</a>. 
+       <br><br>
+       An <dfn>Attestation of Conformance</dfn> is an explicit statement by the Service Provider about their adherence to the applicable OCI Conformance Criteria. Such self-attestation SHALL be signed by the Service Provider’s senior management and provided to the OCI Steering Committee for publication, either as a stand-alone document or as a statement of permission for OCI to hyperlink to the Service Provider’s own public storage location. Where OCI prescribes a template for such representation, the latest published version at the time of signing SHALL be used by the Service Provider.
+       <br><br>
+       An <dfn>Operational Attestation</dfn> is a presentation of operational or system performance data by the Service Provider in relation to selected requirements within the applicable OCI Conformance Criteria. Such self-attestation NEED NOT be signed by the Service Provider’s senior management or other staff. The Service Provider NEED NOT make any claim beyond the presented data in the self-attestation.
+       <br><br>
+       At any time the OCI Steering Committee MAY challenge any Service Provider on any of the statements or claims made. The Service Provider SHALL then address the points of concern raised by the OCI Steering Committee in a form and timeframe appropriate to the situation and as agreed with the OCI Steering Committee.
       </p>
-      <p> OCI provides a public repository for submitted self-attestations at https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof.
+      <p> OCI provides a <a href="https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof">public repository</a> for submitted self-attestations.
       </p>
       <h3>Audited service providers</h3>
-        <p>Where self-attestation is permissible or required as additional evidence on top of a third-party audit (refer to <a>Test of Controls</a>), the Service Provider SHALL make the necessary documentation available to OCI.
+        <p>Where <a>Operational Attestation</a> is permissible or required as additional evidence on top of a third-party audit (refer to <a>Test of Controls</a>), the Service Provider SHALL make the necessary documentation available to OCI.
         </p>
       <h3>VRS providers</h3>
-        <p>VRS providers SHALL self-attest that they are in compliance with <b>all</b> requirements within the OCI VRS Providers Conformance Criteria.
+        <p>VRS providers SHALL provide <a>Attestation of Conformance</a>, i.e. self-attest that they are in compliance with <b>all</b> requirements within the <a href="https://open-credentialing-initiative.github.io/VRS-Conformance-Criteria/latest/index.html">VRS Integration Conformance Criteria</a>.
         </p>
   </section>
 </body>
