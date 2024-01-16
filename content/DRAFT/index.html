@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>Conformance Program</title>
-  <h2 id="subtitle">v1.1.0</h2>
+  <h2 id="subtitle">v1.1.1</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -181,7 +181,10 @@
         </p>
         <b>Temporary limitation of audit scope</b>
         <p> OCI has not yet standardized the DIDComm-based wallet-to-wallet communication that is to be implemented by Digital Wallet Providers. Since the initial overview of technologies proposed in the <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/index.html">Digital Wallet Conformance Criteria</a> only permits the implementation of custom DIDComm flows that might be outside of OCI's future recommendations, 
-          OCI does not require conformance with any DIDComm-specific elements of the Digital Wallet Conformance Criteria until the respective specifications have been updated. In this transition period, OCI permits other technological means for the issuance and exchange of verifiable credentials, such as API-based approaches.
+          OCI does not require conformance with any DIDComm-specific elements of the Digital Wallet Conformance Criteria until the respective specifications have been updated. In this transition period, OCI permits other technological means for the issuance and exchange of Verifiable Credentials (VC), such as API-based approaches.
+        </p>
+        <p>
+          To support stakeholders through the DSCSA Stabilization Period, OCI is deferring the requirement in <a href="https://open-credentialing-initiative.github.io/Digital-Wallet-Conformance-Criteria/latest/#verifying-the-credential-issuer">Section 4.1.4.1 Verifying the Credential Issuer</a> for the Trusted Issuer check to take place at each generation. While checking Trusted Issuer status at each Verifiable Presentation (VP) generation benefits VC holders by preventing invalid VPs from being sent, this must be balanced against the potential performance impact to the overall system (i.e. VRS API response times). It must be noted that even if a VP is not “pre-checked” in this way prior to sending, credentials issued by a non-trusted Issuer will always fail a VP verification check, and therefore the overall security of the credentialing ecosystem is not affected. 
         </p>
       <h3>Test of Details</h3>
         <p>OCI defines <dfn>Test of Details</dfn> as any audit method that assesses factual evidence of whether the required conformance criteria have been met as stated. <br><br>
