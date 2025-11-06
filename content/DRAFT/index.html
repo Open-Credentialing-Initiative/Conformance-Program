@@ -13,7 +13,7 @@
   <meta http-equiv=" Content-Type" content="text/html;charset=utf-8" />
 
   <title>Conformance Program</title>
-  <h2 id="subtitle">v1.1.1</h2>
+  <h2 id="subtitle">v1.1.2</h2>
   
   <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
   <script type="text/javascript" class="remove">
@@ -153,7 +153,7 @@
           <li>Credential Issuers</li>
           <li>Digital Wallet Providers</li>
         </ul>
-      <p>Further, where <a>Operational Attestation</a> is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHALL also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
+      <p>Further, where <a>Operational Attestation</a> is deemed a more useful proof of compliance for certain individual conformance requirements of OCI Service Providers undergoing formal third-party audit, these service providers SHOULD also provide self-attestations in the applicable format (refer to <a>Test of Controls</a>).
       </p>
       <p>Once an OCI Service Provider is approved as a result of a successful audit and self-attestation (as applicable), they are considered a <dfn>valid OCI Service Provider</dfn> until one of the following events triggers another audit (re-audit) and/or self-attestation: </p>
         <ul>
@@ -163,7 +163,7 @@
         </ul>
     <b>Scheduling</b>
       <p>The OCI Steering Committee SHALL agree on a suitable specification release process with the OCI Service Providers to allow for realistic deadlines to compliance (Figure 1). This process SHOULD include considerations regarding audit requirements, time to audit, and any other necessary arrangements. Where these considerations allow for a grace period between the trigger of a re-audit or re-attestation and the execution of those, the affected OCI Service Providers SHALL continue to be considered as <a>valid OCI Service Providers</a> for that period.<br><br>
-      Where <a>Operational Attestation</a> requires recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirement. At a minimum, reports SHALL show monthly averages of the relevant operational data and cover no more than six (6) months in total. The first report begins in the month of successful (re-)audit completion. Subsequent reports SHALL cover the reporting period directly following the prior reported period. Reports MAY show more granular data than monthly averages and cover more frequent time periods. Reports MAY constitute manual submissions to OCI or automated publicly accessible displays. Each report SHALL be submitted no later than five (5) business days following the end of each reporting period. 
+      Where <a>Operational Attestation</a> requires or recommends recurring reports, the start date for the reporting cadence is determined by the most recent audit affecting the respective conformance requirement. At a minimum, reports SHALL show monthly averages of the relevant operational data and cover no more than six (6) months in total. The first report begins in the month of successful (re-)audit completion. Subsequent reports SHALL cover the reporting period directly following the prior reported period. Reports MAY show more granular data than monthly averages and cover more frequent time periods. Reports MAY constitute manual submissions to OCI or automated publicly accessible displays. Each report SHALL be submitted no later than five (5) business days following the end of each reporting period. 
       </p>
       <figure id="figure">
           <img src="assets/oci-self-attestation-process.svg" alt="High-level OCI Roadmap Process.svg" style="width: 50%; height: 50%;" />
@@ -193,7 +193,7 @@
       <h3>Test of Controls</h3>
         <p>OCI defines <dfn>Test of Controls</dfn> as any audit method that assesses whether operational controls and practices put in place by the auditee are sufficiently documented, functional and adhered to as intended by systems and staff of the auditee. <br><br>
           This is an indirect testing approach based on the assumption that adequate controls lead to compliance with stated conformance criteria. Test of Controls may involve methods such as enquiry, inspection of documentation, or observation of the auditee’s staff. Test of Controls methods SHOULD be applied by the auditor in cases where <a>Test of Details</a> is deemed neither feasible nor informative.<br><br>
-          Where the auditor applies solely a Test of Controls approach, Service Providers SHALL produce audit-independent <a>Operational Attestation</a> that is available via OCI's <a href="https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof">public repository</a>. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
+          Where the auditor applies solely a Test of Controls approach, Service Providers SHOULD produce audit-independent <a>Operational Attestation</a> that is available via OCI's <a href="https://github.com/Open-Credentialing-Initiative/marketplace/tree/main/proof">public repository</a>. It is then the responsibility of OCI members and service users to assess whether such performance is acceptable for continued collaboration.<br><br>
           The auditor SHALL apply the Test of Controls approach to the following specific conformance criteria.<br>
           Digital Wallet Conformance Criteria:
           <ul>
